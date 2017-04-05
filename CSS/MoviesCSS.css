@@ -1,0 +1,53 @@
+.MoviesPage {
+   pointer-events: none;
+   cursor: default;
+}
+
+#Trailer {
+   border: solid orange;
+   border-width: 5px;
+   width: 800px;
+   height: 450px;
+}
+
+.SizeofMoviePoster {
+   height: 350px;
+   width: 350px;
+   border: solid yellow;
+} 
+
+.Movies {
+   height: 875px;
+   -webkit-column-count: 3;
+   -moz-column-count: 3; 
+   column-count: 3;
+   -webkit-column-gap: 40px; 
+   -moz-column-gap: 40px; 
+   column-gap: 40px;
+   -webkit-column-rule: 2px solid orange; 
+   -moz-column-rule: 2px solid orange; 
+   column-rule: 2px solid orange;
+}
+
+h3, h3 > a {
+    text-align: center;
+    color: pink;
+    font-family: serif;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+    font-size:150%;
+}
+
+.SmallHeading {
+   font-weight: bold;
+   color: orange;
+}
+
+input {
+   width: 50px;
+   height: 15px;
+   position: relative;
+   top: 15px;
+}
+
+
+

@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket Page</title>
+    <link href="../CSS/CommonCSS.css" type="text/css" rel="stylesheet" />
+    <link href="../CSS/TicketPageCSS.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img class="Banner" title="Banner" src="../Images/banner.jpg" alt="Animated Cinema Banner">
+        <iframe src="https://ia801400.us.archive.org/33/items/Q2_COMEDYCARTOON/custard_pie_capers.mp3" class="Music"></iframe>
+    </header>
+    <nav>
+        <a href="Index.html" class="MoviesPage">Movies</a>
+        <a href="NowShowing.html" class="NowShowingPage">NowShowing</a>
+        <a href="TicketPage.html" class="TicketPage">Ticket</a>
+        <a href="CinemaLocationPage.html" class="CinemaLocationPage">CinemaLocation</a>
+    </nav>
+	<div id="Block">
+    <p class="Heading1" id="Heading1"></p>
+    <p class="Heading2" id="Heading2"></p>
+    <table id="Seats">
+        <thead>
+            <tr>
+                <th colspan=5>SCREEN</th>
+            </tr>
+        </thead>
+		<tbody>
+            <tr>
+                <td class="RowAlpha" colspan=5><hr></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="RowAlpha">G.C.</td>
+                <td class="GoldSeat" id="G.C.1">1</td>
+                <td class="GoldSeat" id="G.C.2">2</td>
+                <td class="GoldSeat" id="G.C.3">3</td>
+                <td class="GoldSeat" id="G.C.4">4</td>
+            </tr>
+        </tfoot>
+    </table>
+    <div class="InfoAboutSeats">
+        <span class="BoxColor1"></span>
+        <span class="Info"> - Seat Booked</span>
+        <span class="BoxColor2"></span>
+        <span class="Info"> - Seat Available</span>
+        <span class="BoxColor3"></span>
+        <span class="Info"> - Seat Selected</span>
+        <span class="BoxColor4"></span>
+        <span class="Info"> - Gold Class Seat</span>
+    </div>
+    <a href="#Ticket" onclick="Display()" class="button" id="button">CONFIRM</a>
+    <div id="Ticket" class="Ticket">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<p id="Name" class="TicketStyle">Movie Name</p>
+        <p id="Timing" class="TicketStyle">Movie Timing</p>
+        <p id="Seat" class="TicketStyle">Seats - </p>
+        <input type="submit" name="Confirm" value="Confirm" onclick="Confirm()">
+        <input type="submit" name="Cancel" value="Cancel" onclick="Cancel()">
+	</div>
+    </div>
+	</div>
+     <footer>
+        <div class="Logo">
+            <img class="Logo" title="Logo" src="../Images/Logo.png" alt="Animated Cinema Logo">
+        </div>
+        <hr>Copyright 2015 @ <a href="DesignPage.html">DreamWorks Pvt. Lmt.</a> All Rights Reserved.
+    </footer>
+     <script src="../JavaScript/BookingSystem.js"></script>
+</body>
+</html>

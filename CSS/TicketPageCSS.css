@@ -1,0 +1,187 @@
+body {
+    text-align: center;
+    height:100%;
+    margin:0;
+    padding:0;
+    border: solid black;
+}
+
+
+.TicketPage {
+   pointer-events: none;
+   cursor: default;
+}
+
+table {
+    position: relative;
+    left: 350px;
+    width: 600px;
+    border-spacing: 0.5rem;
+    margin: 10px;
+    border: solid orange;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+th {
+    border: 2px solid navy;
+    margin: 25px;
+    padding: 5px;
+    background: -webkit-linear-gradient(left, grey, white); 
+    background: -o-linear-gradient(right, grey, white); 
+    background: -moz-linear-gradient(right, grey, white); 
+    background: linear-gradient(to right, grey, white); 
+}
+
+td{
+    border: solid red;
+    padding: 10px;
+}
+
+.GoldSeat{
+    background-color: yellow;
+}
+
+.RowAlpha {
+    border: hidden;
+    background-color: transparent;
+}
+
+.SeatBooked {
+    background-color: rgb(0,255,0);
+}
+
+.BookSeat {
+    background-color: orange;
+}
+
+.BookSeat:hover, .GoldSeat:hover{
+    background-color: rgb(0,0,255);
+}
+
+.InfoAboutSeats {
+    position: absolute;
+    top: 600px;
+    left: 1000px;
+}
+.BoxColor1,.BoxColor2, .BoxColor3, .BoxColor4 {
+    border: 2px solid;
+    padding: 8px;
+}
+
+.BoxColor1 {
+    background-color: green;
+}
+
+.BoxColor2 {
+    background-color: orange;    
+}
+
+.BoxColor3 {
+    background-color: blue;
+}
+
+.BoxColor4 {
+    background-color: yellow;
+}
+
+.Info {
+    display: block;
+    position: relative;
+    bottom: 20px;
+    left: 100px;
+    font-weight: bold;
+    font-family: cursive;
+    color: orange;
+}
+
+.button { 
+    font-size: large;
+    padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 2px black;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Ticket {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgb(0,0,0);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.Ticket:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.Ticket > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+.TicketStyle {
+    color: blue;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+#Timing, #Seat {
+    color: black;
+    text-align: left;
+}

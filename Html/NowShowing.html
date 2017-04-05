@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Now Showing</title>
+    <link href="../CSS/CommonCSS.css" type="text/css" rel="stylesheet" />
+    <link href="../CSS/NowShowingCSS.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img class="Banner" title="Banner" src="../Images/banner.jpg" alt="Animated Cinema Banner">
+        <iframe src="https://ia801400.us.archive.org/33/items/Q2_COMEDYCARTOON/custard_pie_capers.mp3" class="Music"></iframe>
+    </header>
+    <nav>
+        <a href="Index.html" class="MoviesPage">Movies</a>
+        <a href="NowShowing.html" class="NowShowingPage">NowShowing</a>
+        <a href="TicketPage.html" class="TicketPage">Ticket</a>
+        <a href="CinemaLocationPage.html" class="CinemaLocationPage">CinemaLocation</a>
+    </nav>
+    <form action="TicketPage.html#Heading1" method=post class="form">
+        <img title="The Smurfs" src="../Images/Movie1.jpg" alt="The Smurfs Poster" id="TheSmurfs">
+        <fieldset>
+        <legend></legend>
+        <select name="Timing" id="Timing1">
+        </select>
+        <p></p>
+        <input type="submit" name="BuyTicket" value="Buy Ticket" onclick="MovieData(1)">
+        </fieldset>    
+        <img title="Minions" src="../Images/Movie2.jpe" alt="Minions" id="Minions">
+        <fieldset>
+        <legend></legend>
+        <select name="Timing" id="Timing2">
+        </select>
+        <p></p>
+        <input type="submit" name="BuyTicket" value="Buy Ticket" onclick="MovieData(2)">
+        </fieldset>
+        <img title="Inside Out" src="../Images/Movie3.jpg" alt="Inside Out Poster" id="InsideOut">
+        <fieldset>
+        <legend></legend>
+        <select name="Timing" id="Timing3">
+        </select>
+        <p></p>
+        <input type="submit" name="BuyTicket" value="Buy Ticket" onclick="MovieData(3)">
+        </fieldset>
+    </form>
+     <footer>
+        <div class="Logo">
+            <img class="Logo" title="Logo" src="../Images/Logo.png" alt="Animated Cinema Logo">
+        </div>
+        <hr>Copyright 2015 @ <a href="DesignPage.html">DreamWorks Pvt. Lmt.</a> All Rights Reserved.
+    </footer>
+     <script src="../JavaScript/Form.js"></script>
+     <script src="../JavaScript/BookingSystem.js"></script>
+</body>
+</html>

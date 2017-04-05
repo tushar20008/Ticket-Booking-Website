@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Cinema</title>
+    <link href="../CSS/CommonCSS.css" type="text/css" rel="stylesheet" />
+    <link href="../CSS/MoviesCSS.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img class="Banner" title="Banner" src="../Images/banner.jpg" alt="Animated Cinema Banner">
+        <!--<iframe src="https://ia801400.us.archive.org/33/items/Q2_COMEDYCARTOON/custard_pie_capers.mp3" class="Music"></iframe>-->
+    </header>
+    <nav>
+        <a href="Index.html" class="MoviesPage">Movies</a>
+        <a href="NowShowing.html" class="NowShowingPage">NowShowing</a>
+        <a href="TicketPage.html" class="TicketPage">Ticket</a>
+        <a href="CinemaLocationPage.html" class="CinemaLocationPage">CinemaLocation</a>
+    </nav>
+    <p class="Heading1">Trailer</p>
+    <video id="Trailer" autoplay>
+        <source src="https://courses.cs.cityu.edu.hk/cs2204/barbecue.mp4" type="video/mp4">
+    </video>
+    <br>
+    <input onclick="Unmute()" type="image" id="Unmute" src="../Images/icon-unmute.png" alt="UnMuteButton">
+    <input onclick="Mute()" type="image" id="Mute" src="../Images/icon-mute.png" alt="MuteButton">
+    <button onclick="Pause_Play()" type="button" id="Pause_Play">Pause Video</button>
+    <p class="Heading1">Top Movies</p>
+    <p class="Heading2">Now Showing</p>
+    <div class="Movies">
+        <figure>
+            <img title="The Smurfs" src="../Images/Movie1.jpg" alt="The Smurfs Movie Poster" class="SizeofMoviePoster">
+            <figcaption>
+                <h3 class="Heading3" onclick="ChangeVideo(0)"><a href="#Trailer">The Smurfs</a></h3>
+                    <ul>
+                        <li><span class="SmallHeading">Director - </span>Raja Gosnell</li>
+                        <li><span class="SmallHeading">Stars - </span>Hank Azaria, Katy Perry, Jonathan Winters</li>
+                        <li>When the evil wizard Gargamel chases the tiny blue Smurfs out of their village, they tumble from their magical world into New York City.</li>
+                    </ul>
+            </figcaption>
+        </figure>
+        <figure>
+            <img title="Minions" src="../Images/Movie2.jpe" alt="Minions Movie Poster" class="SizeofMoviePoster">
+            <figcaption>
+                <h3 class="Heading3" onclick="ChangeVideo(1)"><a href="#Trailer">Minions</a></h3>
+                    <ul>
+                        <li><span class="SmallHeading">Director - </span>Kyle Balda, Pierre Coffin</li>
+                        <li><span class="SmallHeading">Stars - </span>Sandra Bullock, Jon Hamm, Michael Keaton </li>
+                        <li>Minions Stuart, Kevin and Bob are recruited by Scarlett Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.</li>
+                    </ul>
+            </figcaption>
+        </figure>
+        <figure>
+            <img title="Inside Out" src="../Images/Movie3.jpg" alt="Inside Out Movie Poster" class="SizeofMoviePoster">
+            <figcaption>
+                <h3 class="Heading3" onclick="ChangeVideo(2)"><a href="#Trailer">Inside Out</a></h3>
+                    <ul>
+                        <li><span class="SmallHeading">Director - </span>Pete Docter, Ronnie Del Carmen</li>
+                        <li><span class="SmallHeading">Stars - </span>Amy Poehler, Bill Hader, Lewis Black</li>
+                        <li>After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school.</li>
+                    </ul>
+            </figcaption>
+        </figure>
+    </div>
+    <p class="Heading2">Upcoming</p>
+    <div class="Movies">
+        <figure>
+            <img title="How to Train Your Dragon 2" src="../Images/Movie4.jpg" alt="How to Train Your Dragon 2 Movie Poster" class="SizeofMoviePoster">
+            <figcaption>
+                <h3 onclick="ChangeVideo(3)"><a href="#Trailer">How to Train Your Dragon 2</a></h3>
+                    <ul>
+                        <li><span class="SmallHeading">Director - </span>Dean DeBlois</li>
+                        <li><span class="SmallHeading">Stars - </span>Jay Baruchel, Cate Blanchett, Gerard Butler</li>
+                        <li>When Hiccup and Toothless discover an ice cave that is home to hundreds of new wild dragons and the mysterious Dragon Rider, the two friends find themselves at the center of a battle to protect the peace.</li>
+                    </ul>
+            </figcaption>
+        </figure>
+        <figure>
+            <img title="The Secret Life of Pets" src="../Images/Movie5.jpg" alt="The Secret Life of Pets Movie Poster" class="SizeofMoviePoster">
+            <figcaption>
+                <h3 onclick="ChangeVideo(4)"><a href="#Trailer">The Secret Life of Pets</a></h3>
+                    <ul>
+                        <li><span class="SmallHeading">Director - </span>Chris Renaud, Yarrow Cheney</li>
+                        <li><span class="SmallHeading">Stars - </span>Lake Bell, Ellie Kemper, Kevin Hart</li>
+                        <li>Max's life as a favorite pet is turned upside down, when his owner brings home a sloppy mongrel named Duke. They have to put their quarrels behind when they find out that an adorable white bunny named Snowball is building an army to take revenge on all pets owners.</li>
+                    </ul>
+            </figcaption>
+        </figure>
+        <figure>
+            <img title="Kung Fu Panda 3" src="../Images/Movie6.jpe" alt="Kung Fu Panda 3 Poster" class="SizeofMoviePoster">
+            <figcaption>
+                <h3 onclick="ChangeVideo(10)"><a href="#Trailer">Kung Fu Panda 3</a></h3>
+                    <ul>
+                        <li><span class="SmallHeading">Director - </span>Alessandro Carloni, Jennifer Yuh</li>
+                        <li><span class="SmallHeading">Stars - </span>Jack Black, Angelina Jolie, Dustin Hoffman</li>
+                        <li>Continuing his "legendary adventures of awesomeness", Po must face two hugely epic, but different threats: one supernatural and the other a little closer to his home.</li>
+                    </ul>
+            </figcaption>
+        </figure>
+    </div>
+    <footer>
+        <div class="Logo">
+            <img class="Logo" title="Logo" src="../Images/Logo.png" alt="Animated Cinema Logo">
+        </div>
+        <hr>Copyright 2015 @ <a href="DesignPage.html">DreamWorks Pvt. Lmt.</a> All Rights Reserved.
+    </footer>
+    <script src="../JavaScript/Index.js"></script>
+</body>
+</html>

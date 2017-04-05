@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Design Page</title>
+    <style>
+        html {
+            font-size: 150%;
+            font-weight: 500;
+            color: white;
+            background-image: url('../Images/wallpaper.jpg');
+        }   
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Movies Page – Unobtrusive event handler is used for the continuous loop of trailers. While obtrusive event handlers are used for the mute/unmute, pause/play button and when either of the movie names are clicked to change to that movie trailer.</li>
+        <li>A global array A is made to store all the SRC of the trailers.</li>
+        <li>Inbuilt function v.onended is used to start the next trailer after waiting for 3 secs using setTimeout().</li>
+        <li>V.muted is used to check if the video is mute or not and then change it accordingly and the image of the button is also changed. V.paused is used to check if the video is pause and then is played by v.play() or paused by v.pause().</li>
+        <li>Function changevideo(n) changes the trailer when the movie titles are clicked.</li>
+        <li>If the movie title which does not have a trailer is clicked, the current playing trailer is refreshed.</li>
+    </ul>
+    <ul>
+        <li>Data Regarding the form is loaded on the Now Showing Page using Form.js</li>
+        <li>All the Movie details are stored in a JSON object.</li>
+    </ul>
+    <ul>
+        <li>Now Showing and Ticket Page - Unobtrusive event handler is used for the seating plan and booking tickets system. While obtrusive event handlers are used for the BuyTicket button on NowShowing, confirm button on ticket page and the confirm and cancel button on the pop up dialog box on the ticket page.</li>
+        <li>Value from 0-17 is taken from the drop down list in the NowShowing Page to show the different seating plans and different bookings.</li>
+        <li>18 arrays are made for each seating and booking arrangement.</li>
+        <li>Session storage is used to upload them and if they already exist local storage is used to update them.</li>
+        <li>Table.insertrow() is used to insert rows  and .insertcell() is used to insert cells.</li>
+        <li>All the seats background color and onlcick  are edited accordingly</li>
+        <li>On clicking confirm button, a dialog box pops up showing movie name ,date , day ,time, audi and seats selected. Also containing 3 options – Confirm, Cancel, Close.
+        <ul>
+            <li>Cancel – refreshing the ticket page, removing the selected seats</li>
+            <li>Close – just closes the dialog box, not removing the selected seats</li>
+            <li>Confirm – saves the booking and make changes in the local storage and takes to Nowshowing page.</li>
+        </ul>
+        </li>
+        <li>Also the confirm button is not clickable unless at least one seat has been selected.</li>
+    </ul>
+    <!--
+    <ul>
+        <li>The Theme of the cinema is animated. Website wallpaper, music, movies and font is selected according to the theme.</li>
+        <li>There are 5 HTML pages and 5 external CSS sheets.</li>
+        <li>1 CSS sheet is common for all pages except the design page. While the remaining 4 CSS sheets have been designed per page requirements. There is also an embedded CSS in the Design Page.</li>
+        <li>Common CSS includes the banner, navigation, footer, logo and common styling effects for text, button, hyperlinks, etc.</li>
+        <li>In the all the pages, text used for information is cursive, white and has a standard font size.</li>
+        <li>The Banner has animation and transition effect . The music is put using iframe but its hidden using CSS.</li>
+        <li>Footer contains the logo on top of the horizontal line and has the link to the design page.</li>
+        <li>
+            Movies Page
+            <ul>
+                <li>Iframe is used to get the trailer and heading 1 and 2 are used from Common CSS.</li>
+                <li>Shadow effect and glowing effect is used for heading and movie names.</li>
+                <li>Multi col is used to align the 3 movies side by side.</li>
+                <li>Unordered list is used for movie description which is formatted in common CSS.</li>
+                <li>A link is used on now showing movies to take to the specific movie in the NowShowing Page.</li>
+            </ul>
+        </li>   
+        <li>
+            Now Showing
+            <ul>
+                <li>Form is used to take the user to the ticket page when he clicks on any buy ticket button.</li>
+                <li>Relative Positioning is used to align the movies and the movie booking details</li>
+                <li>Drop down list, is more appealing using background, border and other attributes.</li>
+                <li>Every booking details about the movie is put inside the box using fieldset.</li>
+            </ul>
+        </li>
+        <li>
+            Ticket Page
+            <ul>
+                <li>Heading 1 and 2 are used for movie name and movie details from Common CSS.</li>
+                <li>Table is used to show the seating plan.</li>
+                <li>Gradient effect and colspan is used on the Screen.</li>
+                <li>All seats are given different color according to availability and hover effect has also been used.</li>
+                <li>Attributes like padding, margin and border-spacing are used to enhance the appearance.</li>
+                <li>Relative Positioning is used to position the info about the seats and confirm button has the same formatting as previous buttons</li>
+            </ul>
+        </li>
+        <li>
+            Cinema Location Page
+            <ul>
+                <li>Iframe is used to put the map which shows the location of the cinema hall.</li>
+                <li>Again unordered list is used to describe the different ways in which u can reach the place and its formatting is done in Common CSS.</li>
+                <li>Another table is used input some common bus routes to East TST.</li>
+            </ul>
+        </li>
+        <li>
+            References Used
+            <ul>
+                <li>https://www.canva.com/create/banners/ - was used to create the banner</li>
+                <li>http://www4.flamingtext.com/All-Logos - create the logo</li>
+                <li>https://en.wikipedia.org/wiki/List_of_bus_routes_in_Hong_Kong - get the bus routes</li>
+                <li>https://support.google.com/maps/answer/3045850?hl=en – get my cinema location</li>
+                <li>https://ia801400.us.archive.org/33/items/Q2_COMEDYCARTOON/custard_pie_capers.mp3 - background music</li>
+            </ul>
+        </li>
+    </ul>
+    -->
+</body>
+</html>

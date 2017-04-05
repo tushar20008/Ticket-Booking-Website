@@ -1,0 +1,33 @@
+
+.CinemaLocationPage {
+   pointer-events: none;
+   cursor: default;
+}
+
+iframe {
+   width: 640px;
+   height: 480px;
+   border: groove gold;
+}
+
+li {
+   font-weight: 900;
+   font-size: x-large;
+   position: relative;
+   left: 50px;
+   color: white;
+}
+
+p, table{
+   font-weight: 500;
+   font-size: x-large;
+   color: orange;
+}
+
+table {
+   position: relative;
+   top: 20px;
+   left: 20px;
+   border: solid yellow;
+   border-spacing: 10px;
+}
